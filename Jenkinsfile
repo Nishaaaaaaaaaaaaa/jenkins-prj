@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker build -idt -p 8000:8000 localhost:5000/py:v2'
+                sh 'docker run -idt -p 8000:8000 localhost:5000/py:v2'
                 // Add your deployment commands here
             }
         }
