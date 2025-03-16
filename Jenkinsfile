@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Running tests...'
+                sh 'docker pull localhost:5000/py:v2'
                 // Add your test commands here (e.g., JUnit, Selenium)
             }
         }
