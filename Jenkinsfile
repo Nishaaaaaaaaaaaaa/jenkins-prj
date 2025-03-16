@@ -4,7 +4,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh docker ps -a
+                sh 'docker ps -a'
                 // Add your build commands here (e.g., Maven, Gradle, npm)
             }
         }
